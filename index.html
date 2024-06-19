@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tobi Rodrigo Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Tobías Rodrigo <br><p style="font-size: 15px;">Web Developer</p></div>
+      <div>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre Mi</a></li>
+            <li><a href="#experience">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Tobías Rodrigo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">Sobre Mi</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Habilidades</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+<!-- Profile Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/tobiro.png" alt="Tobi Rodrigo profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola, soy</p>
+        <h1 class="title">Tobías Rodrigo</h1>
+        <p class="section__text__p2">Desarrollador Front-end</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2">
+                <a href="./assets/Tobias rodrigo (3).pdf" download="Tobias_Rodrigo_CV.pdf">Descargar CV</a>
+            </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Info Contacto
+          </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/tobi-rodrigo-webdeveloper/'">
+            <img src="./assets/github.png" alt ="My Github profile" class="icon" onclick="location.href='https://github.com/tobirodrigo'">
+        </div>
+      </div>
+    </section>
+
+ <!-- About Me Section -->
+    <section id="about">
+      <p class="section__text__p1">Conocer más</p>
+      <h1 class="title">SOBRE MÍ</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/ayuda-modified.png"
+            alt="Foto de perfil"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Icono de experiencia"
+                class="icon"
+              />
+              <h3>Experiencia</h3>
+              <p>Freelance <br>Diseño Web</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Icono de educación"
+                class="icon"
+              />
+              <h3>Educación</h3>
+              <p>CoderHouse<br />Carrera: Desarrollador Front-end</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Me llamo Tobías Rodrigo. Vivo en Buenos Aires y soy diseñador web desde abril 2023.
+                Las ganas de aprender me llevaron a cursar la carrera de Desarrollador Front-end en CoderHouse. Además, estudio de manera independiente y autodidacta. 
+                En este momento me encuentro capacitado, con ganas de empezar mi recorrido como Freelancer y así explotar mis aptitudes al máximo. Cada proyecto es un nuevo reto que enfrento con gran entusiasmo, ganas de seguir aprendiendo y compromiso para dar lo mejor de mi mismo como así también ayudar al cliente a brindar el mejor servicio.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Flecha"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+<!-- Skills Section -->
+<section id="experience">
+    <h1 class="title">HABILIDADES</h1>
+    <div class="text-container">
+      <p class="p2-ltr" style="font-size: 20px;">Estoy especializado en diseño y desarrollo web con HTML5, CSS3 y JavaScript. Tengo experiencia en herramientas como Sass, Git o Github y posicionamiento SEO. Sigo adquiriendo y perfeccionando conocimientos de React JS</p>
+  </div>
+  <div class="e-d-cont">
+    <div class="about-containers">
+        <div class="detalles-cont">
+            <div class="article-container grid">
+                <article>
+                    <img src="./assets/htmlpic.png" alt="icono experiencia" class="icon">
+                    <div>
+                        <h3>HTML</h3>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/csslogo.png" alt="Icono experiencia" class="icon">
+                    <div>
+                        <h3>CSS</h3>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/jslogo.png" alt="Icono experiencia" class="icon">
+                    <div>
+                        <h3>JavaScript</h3>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/sasslogo.png" alt="Icono experiencia" class="icon">
+                    <div>
+                        <h3>Sass</h3>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/logoseo.png" alt="Icono experiencia" class="icon">
+                    <div>
+                        <h3>SEO</h3>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/ghubloho.png" alt="Icono experiencia" class="icon">
+                    <div>
+                        <h3>Github</h3>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/gitlogo.png" alt="Icono experiencia" class="icon">
+                    <div>
+                        <h3>Git</h3>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/reactlogo.png" alt="Icono experiencia" class="icon">
+                    <div>
+                        <h3>React Js</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>    
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+</section>
+
+<!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Estos son mis últimos</p>
+      <h1 class="title">PROYECTOS</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sccc.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Messi Restaurant</h2>
+            <p>Plantilla para restaurant, con diseño responsive adaptado para celulares</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tobirodrigo/EcommerceDesign.git'">
+                    Visitar
+                </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/altapinta.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Alta Pinta Burger</h2>
+            <p>Plantilla hecha para hamburgueseria, con diseño responsive adaptado para celulares </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tobirodrigo/HamburguesaFront.git'">
+                    Visitar
+                </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/mz2.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">MZ Service</h2>
+            <p>Plantilla para Servicio de mantenimiento, con diseño responsive adaptado para celulares</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tobirodrigo/Mz-FeliMu-oz.git'">
+                    Visitar
+                </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/tiendaf.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tienda Deportiva</h2>
+            <p>Plantilla para tienda ecommerce, con diseño responsive adaptado para celulares</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tobirodrigo/Ecommerceplantilla.git'">
+                    Visitar
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+        <!-- Contact Section -->
+    <section id="contact">
+        <h1 class="title">CONTACTO</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+            <p><a target="_blank" href="mailto:tobiasrodrigo2020@gmail.com">tobiasrodrigo2020@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+            <p><a target="_blank" href="https://www.linkedin.com/in/tobi-rodrigo-webdeveloper/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/whatsapp.png" alt="Whatsapp icon" class="icon contact-icon">
+            <p><a target="_blank" href="https://wa.me/5491122394122?text=Hola%20Tobias%2C%20me%20pongo%20en%20contacto%20porque..."> (11) 2239 4122</a></p>
+        </div>
+      </div>
+    </section>
+   <!-- Footer -->
+   <footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#experience">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Tobías Rodrigo. Todos los derechos reservados.</p>
+</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
